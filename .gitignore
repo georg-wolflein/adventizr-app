@@ -15,7 +15,6 @@ out/
 
 # Gradle files
 .gradle/
-gradle/
 build/
 
 # Local configuration file (sdk path, etc)
@@ -54,3 +53,8 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+
+# Other
+gradle/
+/gradlew
+/gradlew.bat

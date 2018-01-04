@@ -24,4 +24,28 @@ public class CalendarInfo {
         // TODO: parse created and updated
         return calendarInfo;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public UserInfo getUser() {
+        return user;
+    }
+
+    public Date getCreated() {
+        return created;
+    }
+
+    public Date getUpdated() {
+        return updated;
+    }
 }

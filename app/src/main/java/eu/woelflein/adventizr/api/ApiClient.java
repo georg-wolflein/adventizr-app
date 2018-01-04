@@ -2,18 +2,28 @@ package eu.woelflein.adventizr.api;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
 public class ApiClient {
 
     private URL baseUrl;
+    private static ApiClient instance;
 
-    public ApiClient(URL baseUrl) {
-        this.baseUrl = baseUrl;
+    public ApiClient(String baseUrl) throws MalformedURLException {
+        this.baseUrl = new URL(baseUrl);
     }
 
-    private String getResponseString(ApiRequest request) throws IOException {
+    public static ApiClient getInstance() {
+        return instance;
+    }
+
+    public static void setInstance(ApiClient instance) {
+        ApiClient.instance = instance;
+    }
+
+    public String getResponseString(ApiRequest request) throws IOException {
         URL url = new URL(baseUrl, request.getEndpoint());
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) throw new IOException();

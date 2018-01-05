@@ -12,6 +12,14 @@ import static org.junit.Assert.assertEquals;
 public class ListCalendarsRequestTest {
 
     /**
+     * Tests that the request points to the correct API endpoint.
+     */
+    @Test
+    public void apiEndpoint() {
+        assertEquals("calendars", new ListCalendarsRequest().getEndpoint());
+    }
+
+    /**
      * Tests the {@link ListCalendarsRequest#readResponse(String)} method with a sample JSON response.
      */
     @Test

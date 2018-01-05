@@ -1,5 +1,6 @@
 package eu.woelflein.adventizr.api;
 
+import eu.woelflein.adventizr.calendar.CalendarInfo;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

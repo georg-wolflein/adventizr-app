@@ -6,7 +6,9 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-
+/**
+ * A test class for the {@link ListCalendarsRequest} class.
+ */
 public class ListCalendarsRequestTest {
 
     /**

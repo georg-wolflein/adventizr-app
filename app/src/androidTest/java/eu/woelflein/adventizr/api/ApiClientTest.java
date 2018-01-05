@@ -23,7 +23,7 @@ public class ApiClientTest {
     @Before
     public void setUp() throws MalformedURLException {
         Context appContext = InstrumentationRegistry.getTargetContext();
-        ApiClient.setInstance(new ApiClient(Preference.API_BASE_URL.getString(appContext)));
+        ApiClient.setInstance(Preference.API_BASE_URL.getString(appContext));
     }
 
     /**

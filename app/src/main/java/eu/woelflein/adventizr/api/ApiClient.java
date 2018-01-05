@@ -6,12 +6,15 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
+/**
+ * A client for the adventizr API.
+ */
 public class ApiClient {
 
     private URL baseUrl;
     private static ApiClient instance;
 
-    public ApiClient(String baseUrl) throws MalformedURLException {
+    private ApiClient(String baseUrl) throws MalformedURLException {
         this.baseUrl = new URL(baseUrl);
     }
 
@@ -19,8 +22,8 @@ public class ApiClient {
         return instance;
     }
 
-    public static void setInstance(ApiClient instance) {
-        ApiClient.instance = instance;
+    public static void setInstance(String baseUrl) throws MalformedURLException {
+        instance = new ApiClient(baseUrl);
     }
 
     public String getResponseString(ApiRequest request) throws IOException {

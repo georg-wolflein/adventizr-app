@@ -22,7 +22,8 @@ public class GetStatusRequestTest {
     }
 
     /**
-     * Tests the {@link GetStatusRequest#readResponse(String)} method with a sample JSON response if the service is running.
+     * Tests the {@link GetStatusRequest#readResponse(String)} method with a sample JSON response if the service is
+     * running.
      */
     @Test
     public void readRunningResponse() throws ApiResponseException {
@@ -31,7 +32,8 @@ public class GetStatusRequestTest {
     }
 
     /**
-     * Tests the {@link GetStatusRequest#readResponse(String)} method with a sample JSON response if the service is not running.
+     * Tests the {@link GetStatusRequest#readResponse(String)} method with a sample JSON response if the service is
+     * not running.
      */
     @Test
     public void readFailedResponse() throws ApiResponseException {

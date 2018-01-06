@@ -35,7 +35,8 @@ public class ApiClientTest {
     }
 
     /**
-     * Tests that the "/status?format=plain" endpoint returns "running", thereby testing the {@link ApiClient#getResponseString(ApiRequest)} method.
+     * Tests that the "/status?format=plain" endpoint returns "running", thereby testing the
+     * {@link ApiClient#getResponseString(ApiRequest)} method.
      */
     @Test
     public void apiIsRunning() throws IOException {

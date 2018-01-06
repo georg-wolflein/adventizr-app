@@ -64,7 +64,8 @@ public class ApiClient {
      * @param <T>     the return type of the response
      * @return the parsed response
      * @throws IOException          if there was a problem communicating with the API
-     * @throws ApiResponseException if the response could not be parsed by the {@link ApiRequest#readResponse(String)} method
+     * @throws ApiResponseException if the response could not be parsed by the
+     * {@link ApiRequest#readResponse(String)} method
      */
     public <T> T performRequest(ApiRequest<T> request) throws IOException, ApiResponseException {
         return request.readResponse(getResponseString(request));

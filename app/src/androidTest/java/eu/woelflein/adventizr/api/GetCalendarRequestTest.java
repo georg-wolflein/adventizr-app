@@ -1,7 +1,5 @@
-package eu.woelflein.adventizr;
+package eu.woelflein.adventizr.api;
 
-import eu.woelflein.adventizr.api.ApiResponseException;
-import eu.woelflein.adventizr.api.GetCalendarRequest;
 import eu.woelflein.adventizr.calendar.CalendarInfo;
 import org.junit.Test;
 

@@ -1,10 +1,8 @@
-package eu.woelflein.adventizr;
+package eu.woelflein.adventizr.api;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
-import eu.woelflein.adventizr.api.ApiClient;
-import eu.woelflein.adventizr.api.ApiRequest;
-import eu.woelflein.adventizr.api.ApiResponseException;
+import eu.woelflein.adventizr.Preference;
 import org.junit.Before;
 import org.junit.Test;
 

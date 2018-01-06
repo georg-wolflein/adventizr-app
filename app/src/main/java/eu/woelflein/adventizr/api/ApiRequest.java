@@ -19,10 +19,10 @@ public abstract class ApiRequest<T> {
     }
 
     /**
-     * Create a simple {@link ApiRequest<String>} that returns the response String.
+     * Create a simple {@link ApiRequest <String>} that returns the response String.
      *
      * @param endpoint the API endpoint
-     * @return the {@link ApiRequest<String>} object
+     * @return the {@link ApiRequest <String>} object
      */
     public static ApiRequest<String> forEndpoint(String endpoint) {
         return new ApiRequest<String>(endpoint) {

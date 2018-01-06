@@ -1,5 +1,7 @@
-package eu.woelflein.adventizr.api;
+package eu.woelflein.adventizr;
 
+import eu.woelflein.adventizr.api.ApiRequest;
+import eu.woelflein.adventizr.api.ApiResponseException;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
